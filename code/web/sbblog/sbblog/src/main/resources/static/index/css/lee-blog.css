@@ -1,0 +1,409 @@
+html,body{
+    background-color: #262626;
+    font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+*{
+    padding:0px;
+    margin: 0px;
+}
+a,a:focus,a:hover {
+    text-decoration: none;
+}
+.header {
+    background-color: #1c1c1c;
+    min-height: 100vh;
+    width: 320px;
+    position: fixed;
+}
+.main-wrapper{
+    margin-left: 320px;
+    min-height: 100vh;
+    color: #9B9C9D;
+}
+.left-blog-name{
+    padding-top: 1.5rem;
+    text-align: center;
+    color: #C7894F;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.left-blog-name a {
+    color: #C7894F;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.nav-bar{
+    padding:.5rem 1.5rem;
+}
+.nav-bar .nav-bar-header {
+    text-align: center;
+    color: #C7894F;
+}
+.nav-bar .nav-bar-header .header-img img{
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+}
+.nav-bar .nav-bar-header .header-title {
+    padding-top: 10px;
+}
+.nav-bar .nav-bar-header .header-link {
+    padding: 1.5rem 0 .5rem 0;
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+}
+.nav-bar .nav-bar-header .header-link li{
+    float:left;
+}
+.nav-bar .nav-bar-header .header-link li a{
+    color: #C7894F;
+    font-size: 28px;
+}
+hr{
+    margin-top: 0;
+    border-top: 1px solid #131111;
+}
+.nav-bar .nav-bar-menu {
+    list-style: none;
+    padding-left: 80px;
+    display: inline-block;
+}
+.nav-bar .nav-bar-menu li {
+    margin-top: 10px;
+}
+.nav-bar .nav-bar-menu li a,.nav-bar .nav-bar-menu li a:hover{
+    color: #C7894F;
+    text-decoration: none;
+}
+.nav-bar .nav-bar-menu li a i {
+    padding-right: 10px;
+}
+.nav-bar-search {
+    text-align: center;
+}
+.nav-bar-search input {
+    background-color: #1c1c1c;
+    border:1px solid #C7894F;
+    border-radius: 2px;
+    padding: 2px 10px;
+    color: #C7894F;
+}
+.nav-bar-search-content input:focus{
+    border-color: #ec971f;
+    outline: 0;
+    box-shadow: inset 0 1px 1px #ec971f, 0 0 8px #ec971f;
+}
+.nav-bar-search-content button,
+.nav-bar-search-content button:focus,
+.nav-bar-search-content button:active {
+    background-color: #C7894F;
+    border:1px solid #1c1c1c;
+    border-radius: 2px;
+    padding: 2px 4px;
+    outline: none;
+}
+.main-content {
+    padding: 3rem ;
+}
+.content-title{
+    color: #9B9C9D;
+    font-size: 2.5rem;
+}
+.content-title-little{
+    padding: 5px 0;
+    color: #9B9C9D;
+    font-size: .8rem;
+}
+.content-title-little .title-tags{
+    background-color: #1E2128;
+    color: #C7894F;
+    padding: 2px 5px;
+    border:1px solid #C7894F;
+    margin:0 4px;
+}
+.content-list{
+    list-style: none;
+}
+.content-list li{
+    background: #1E2128;
+    margin: 10px 0;
+    border-radius: 2px;
+    padding: 10px 15px;
+    border:1px solid #1E2128;
+
+}
+.content-list li:hover{
+    border:1px solid #C7894F;
+}
+.content-list li:hover .title a{
+    color: #ec971f;
+}
+.content-list li .title{
+    color: #C7894F;
+    font-size: 1.25rem;
+}
+.content-list li .title a{
+    color: #C7894F;
+    font-size: 1.25rem;
+}
+.content-list li .info {
+    color: #9B9C9D;
+    font-size: .8rem;
+    margin-top: 5px;
+}
+.top-article{
+    margin: 10px 0;
+}
+.top-article-title {
+    color: #9B9C9D;
+    font-size: 1.2rem;
+}
+.top-article-list{
+    padding-top: 10px;
+}
+.top-article-list ul {
+    list-style: none;
+}
+.top-article-list ul li{
+    margin: 4px 0;
+    padding:4px  10px;
+    background-color: #1E2128;
+    border:1px solid #1E2128;
+}
+.top-article-list ul li:hover{
+    border:1px solid #C7894F;
+}
+.top-article-list li:hover  a{
+    color: #ec971f;
+}
+.top-article-list ul li a {
+    color: #C7894F;
+    font-size: 1rem;
+}
+.main-wrapper .footer {
+    text-align: center;
+    color: #C7894F;
+    padding: 10px 0;
+}
+.info-window {
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    background-color: #1c1c1c;
+    border-radius: 4px;
+}
+.info-window .user-info{
+    padding: 10px 20px;
+
+}
+.info-window .user-info a{
+    color: #C7894F;
+    padding: 5px;
+    border-radius: 4px;
+}
+.info-window .user-info a:hover{
+    text-decoration: underline;
+}
+.content-detail {
+    padding: 1rem 0;
+}
+.other-article{
+    padding: 10px 0;
+}
+.other-article a{
+    color: #C7894F;
+}
+.comment-area {
+    padding: 10px 0;
+}
+.comment-title {
+    padding: 10px 0;
+    font-size: 1.2rem;
+}
+.comment-area .comment-text textarea{
+    width: 100%;
+    resize: none;
+    border-radius: 4px;
+    background-color: transparent;
+    border:1px solid #C7894F;
+    color: #C7894F;
+    padding: 4px 10px;
+}
+.comment-area .comment-text textarea:focus,
+.comment-area .comment-text textarea:active
+{
+    border:1px solid #C7894F;
+    box-shadow: none;
+    outline: none;
+}
+.comment-btn {
+    padding: 5px;
+    text-align: right;
+}
+.comment-btn button{
+    background-color: #C7894F;
+    border: 1px solid #1c1c1c;
+    border-radius: 2px;
+    padding: 2px 4px;
+    outline: none;
+}
+.comment-list {
+    padding: 10px 0;
+}
+.comment-list ul {
+    list-style: none;
+}
+.comment-msg-box {
+    background-color: #1E2128;
+    padding: 10px 10px;
+    border-radius: 6px;
+    margin: 10px 0;
+    border:1px solid #1c1c1c;
+}
+.comment-msg-box .comment-info {
+    color: #C7894F;
+}
+.comment-msg-box .comment-info span{
+    color: #C7894F;
+    font-size: .8rem;
+    padding: 0 5px;
+}
+.comment-msg-box .comment-msg-content {
+    border-radius: 4px;
+    margin: 5px 5px;
+    border:1px dashed #C7894F;
+    padding: 10px 10px;
+}
+
+.login-window {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(37, 37, 32,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.login-panel {
+    width: 500px;
+    height: 260px;
+    border:1px solid #C7894F;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -130px;
+    margin-left: -250px;
+    background-color: #1c1c1c;
+    border-radius: 4px;
+    color: #C7894F;
+}
+hr.login-hr{
+    border-color: #C7894F;
+}
+.login-window  .login-panel .login-title {
+    padding: 10px;
+    font-size: 1.5rem;
+
+}
+.login-group {
+    margin: 10px;
+}
+.login-group .login-label {
+    font-size: 1rem;
+    font-weight: normal;
+}
+.login-group .login-input {
+    background-color: transparent;
+    border: 1px solid #C7894F;
+    color: #C7894F;
+    outline:none;
+    border-radius: 2px;
+    padding: 2px 6px;
+}
+.login-button {
+    margin: 10px;
+}
+.login-button button {
+    background-color: transparent;
+    border-radius: 2px;
+    border:1px solid #C7894F;
+    color: #C7894F;
+    padding: 4px 20px;
+    margin: 10px;
+    outline: none;
+}
+.login-button button:active,
+.login-button button:hover,
+.login-button button:focus{
+    background-color: #C7894F;
+    border:1px solid #C7894F;
+    color: #1c1c1c;
+    outline: none;
+}
+
+
+.reg-window {
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(37, 37, 32,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.reg-panel {
+    width: 500px;
+    border:1px solid #C7894F;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-left: -250px;
+    background-color: #1c1c1c;
+    border-radius: 4px;
+    color: #C7894F;
+}
+hr.reg-hr{
+    border-color: #C7894F;
+}
+.reg-window  .reg-panel .reg-title {
+    padding: 10px;
+    font-size: 1.5rem;
+
+}
+.reg-group {
+    margin: 10px;
+}
+.reg-group .reg-label {
+    font-size: 1rem;
+    font-weight: normal;
+}
+.reg-group .reg-input {
+    background-color: transparent;
+    border: 1px solid #C7894F;
+    color: #C7894F;
+    outline:none;
+    border-radius: 2px;
+    padding: 2px 6px;
+}
+.reg-button {
+    margin: 10px;
+}
+.reg-button button {
+    background-color: transparent;
+    border-radius: 2px;
+    border:1px solid #C7894F;
+    color: #C7894F;
+    padding: 4px 20px;
+    margin: 10px;
+    outline: none;
+}
+.reg-button button:active,
+.reg-button button:hover,
+.reg-button button:focus{
+    background-color: #C7894F;
+    border:1px solid #C7894F;
+    color: #1c1c1c;
+    outline: none;
+}

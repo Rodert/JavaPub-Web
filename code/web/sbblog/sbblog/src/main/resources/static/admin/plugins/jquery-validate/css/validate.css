@@ -1,0 +1,7 @@
+/**
+ * jquery.validate默认没有样式，为提示错误更加明显，特添加Validate的样式
+ */
+
+label.error {
+	color: red;
+}

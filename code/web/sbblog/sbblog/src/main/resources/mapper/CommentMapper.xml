@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lee.mapper.CommentMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.lee.entity.Comment">
+        <id column="id" property="id" />
+        <result column="content" property="content" />
+        <result column="article_id" property="articleId" />
+        <result column="member_id" property="memberId" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="delete_time" property="deleteTime" />
+        <result column="isdel" property="isdel" />
+    </resultMap>
+    <resultMap id="CommentVOResultMap" type="com.lee.entity.Comment">
+        <id column="id" property="id" />
+        <result column="content" property="content" />
+        <result column="article_id" property="articleId" />
+        <result column="member_id" property="memberId" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="delete_time" property="deleteTime" />
+        <result column="isdel" property="isdel" />
+        <result column="articletitle" property="articletitle" />
+        <result column="membername" property="membername" />
+    </resultMap>
+    <select id="selectCommentVoList" resultMap="CommentVOResultMap" parameterType="java.util.Map">
+        select comment.*,
+        article.title AS articletitle,
+        member.nickname AS membername
+        from comment,article,member
+        where
+        comment.article_id = article.id
+        and
+        comment.member_id = member.id
+        and comment.isdel = 0
+        <if test="article_id != null">
+            and article.id =#{article_id}
+        </if>
+        <if test="content != null">
+            and comment.content like concat('%', #{content}, '%')
+        </if>
+        <if test="membername != null">
+            and member.nickname like concat('%', #{membername}, '%')
+        </if>
+        <if test="articletitle != null">
+            and article.title like concat('%', #{articletitle}, '%')
+        </if>
+
+        order by create_time desc
+
+        <!-- 手动添加分页 -->
+        <if test="offsetIndex != null" > limit #{offsetIndex}, #{limit} </if>
+    </select>
+    <select id="selectCommentPageCount" resultType="java.lang.Long" parameterType="java.util.Map">
+        select count(*) as total
+        from comment,article,member
+        where
+        comment.article_id = article.id
+        and
+        comment.member_id = member.id
+        and comment.isdel = 0
+        <if test="content != null">
+            and comment.content like concat('%', #{content}, '%')
+        </if>
+        <if test="membername != null">
+            and member.nickname like concat('%', #{membername}, '%')
+        </if>
+        <if test="articletitle != null">
+            and article.title like concat('%', #{articletitle}, '%')
+        </if>
+    </select>
+    <!--逻辑删除-->
+    <update id="deleteByArticleId" parameterType="java.lang.Integer">
+        update comment set isdel = 1 where article_id=#{articleid}
+    </update>
+
+</mapper>

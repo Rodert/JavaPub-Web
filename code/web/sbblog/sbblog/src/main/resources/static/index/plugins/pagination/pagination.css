@@ -1,0 +1,22 @@
+.content-page {
+    text-align: center;
+    margin-top: 1rem;
+}
+.content-page a{
+    display: inline-block;
+    margin: 0 10px;
+    padding: 2px 10px;
+    color: #C7894F;
+    border-radius: 2px;
+    border:1px solid #C7894F;
+    background-color: #1E2128;
+}
+.content-page span.active{
+    display: inline-block;
+    margin: 0 10px;
+    padding: 2px 10px;
+    color: #1E2128;
+    background-color: #C7894F;
+    border-radius: 2px;
+    border:1px solid #C7894F;
+}

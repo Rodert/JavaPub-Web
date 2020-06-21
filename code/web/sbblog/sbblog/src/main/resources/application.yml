@@ -1,0 +1,47 @@
+server:
+#  端口配置
+  port: 8080
+spring:
+  #  热部署配置
+  devtools:
+    restart:
+      #需要实时更新的目录
+      additional-paths: resources/**,static/**,templates/**
+  #freemarker 模板定义配置
+  freemarker:
+    charset: UTF-8
+    suffix: .ftl
+    content-type: text/html;charset=utf-8
+    template-loader-path: classpath:/templates
+    cache: false
+    settings:
+      template_update_delay: 0
+      classic_compatible: true #防止页面null时报错;注意：开启后页面引用需要用绝对路径
+
+  mvc:
+    static-path-pattern: /static/**
+  datasource:
+    # 配置数据源
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # 使用druid连接池
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/sb_blog?characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: 123456
+
+#mybatis-plus配置
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+      field-strategy: not_empty
+      table-underline: true
+      db-type: mysql
+      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
+  mapper-locations: classpath:/mapper/*.xml
+logging:
+  level:
+    com:
+      lee:
+        mapper: debug

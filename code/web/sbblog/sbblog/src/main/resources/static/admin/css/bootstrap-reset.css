@@ -1,0 +1,765 @@
+/*!
+ *   Author: Liyt
+ *	 Version: 2.0.0
+!*/
+
+.nav>li>a:focus, .nav>li>a:hover{
+	background-color: inherit;
+}
+
+/* 面板处理区域 */
+.panel {
+	box-shadow:none;
+	border: 1px solid #e5e5e5;
+}
+.panel-heading {
+    border-color: #eff2f7;
+    font-size: 14px;
+    color: #333;
+}
+.panel-footer{
+	background-color: #fff;
+	border-top: 1px solid #eff2f7;
+	 color: #333;
+}
+.panel-danger {
+	    border: 1px solid var(--danger-color);
+}
+.panel-info {
+	    border: 1px solid var(--info-color);
+}
+.panel-success {
+	   border: 1px solid var(--success-color);
+}
+.panel-warning  {
+	    border: 1px solid var(--warning-color);
+}
+.panel-primary{
+	    border: 1px solid var(--primary-color);
+}
+.panel-danger > .panel-heading{
+	    background-color: var(--danger-color);
+    	border-color: var(--danger-color);
+    	color: #fff;
+}
+.panel-info > .panel-heading{
+	    background-color: var(--info-color);
+    	border-color: var(--info-color);
+    	color: #fff;
+}
+.panel-success > .panel-heading{
+	   background-color: var(--success-color);
+    	border-color: var(--success-color);
+    	color: #fff;
+}
+.panel-warning  > .panel-heading{
+   	    background-color: var(--warning-color);
+    	border-color: var(--warning-color);
+    	color: #fff;
+}
+.panel-primary > .panel-heading{
+	    background-color: var(--primary-color);
+    	border-color: var(--primary-color);
+    	color: #fff;
+}
+.panel-primary .panel-heading > .tools > a {
+	color: #fff !important;
+}
+/* --面板处理区域 */
+.progress-bar {
+	background-color: var(--primary-color);
+}
+/* 按钮处理区域 */
+.btn{
+	transition:color 0.2s linear,background-color 0.2s linear;
+	margin-bottom: 2px;
+	border-radius: 0px;
+	padding: 8px 16px;
+	line-height: 14px;
+	font-size: 12px;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+}
+.btn-group-sm>.btn, .btn-sm {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.btn-group-xs>.btn, .btn-xs {
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.list-btn {
+	padding: 6px 13px;
+	height: 30px;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus{
+	outline: none !important;
+}
+.btn.active, .btn:active{
+	box-shadow: none !important;
+	-webkit-box-shadow:none;
+}
+.btn-round{
+	border-radius: 1000px;
+}
+.btn-round-left{
+	border-radius: 500px 0 0 500px;
+}
+.btn-round-right{
+	border-radius: 0 500px 500px 0;
+}
+.btn-link {
+    font-weight: 400;
+    color: #1E9FFF;
+    border-radius: 0;
+}
+.btn-primary {
+    color: #fff;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.btn-info {
+    color: #fff;
+    background-color: var(--info-color);
+    border-color: var(--info-color);
+}
+.btn-success {
+    color: #fff;
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+}
+.btn-warning {
+    color: #fff;
+    background-color: var(--warning-color);
+    border-color: var(--warning-color);
+}
+.btn-danger {
+    color: #fff;
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
+}
+.btn-noborder {
+	color: #676a6c;
+	background-color: transparent;
+	border: none;
+}
+.btn-outline.btn-primary {
+    color: var(--primary-color);
+    background-color: transparent;
+}
+.btn-outline.btn-info {
+    color: var(--info-color);
+    background-color: transparent;
+}
+.btn-outline.btn-success {
+    color: var(--success-color);
+    background-color: transparent;
+}
+.btn-outline.btn-warning {
+    color: var(--warning-color);
+    background-color: transparent;
+}
+.btn-outline.btn-danger {
+    color: var(--danger-color);
+    background-color: transparent;
+}
+
+
+.btn-default:hover {
+    background-color: #fff;
+    border-color: var(--primary-color);
+    opacity: .8;
+    filter: alpha(opacity=80);
+}
+.btn-default:focus,
+.btn-default.active.focus, 
+.btn-default.active:focus, 
+.btn-default.active:hover, 
+.btn-default:active.focus, 
+.btn-default:active:focus, 
+.btn-default:active:hover, 
+.open>.dropdown-toggle.btn-default.focus, 
+.open>.dropdown-toggle.btn-default:focus, 
+.open>.dropdown-toggle.btn-default:hover{
+   background-color: #fff;
+    border-color: var(--primary-color);
+    opacity: .8;
+    filter: alpha(opacity=80);
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    opacity: .8;
+    filter: alpha(opacity=80);
+}
+.btn-primary:focus,
+.btn-primary.active.focus, 
+.btn-primary.active:focus, 
+.btn-primary.active:hover, 
+.btn-primary:active.focus, 
+.btn-primary:active:focus, 
+.btn-primary:active:hover, 
+.open>.dropdown-toggle.btn-primary.focus, 
+.open>.dropdown-toggle.btn-primary:focus, 
+.open>.dropdown-toggle.btn-primary:hover{
+   	color: #fff;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    opacity: .8;
+    filter: alpha(opacity=80);
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+    opacity: .8;
+    filter: alpha(opacity=80);
+}
+.btn-success:focus,
+.btn-success.active.focus, 
+.btn-success.active:focus, 
+.btn-success.active:hover, 
+.btn-success:active.focus, 
+.btn-success:active:focus, 
+.btn-success:active:hover, 
+.open>.dropdown-toggle.btn-success.focus, 
+.open>.dropdown-toggle.btn-success:focus, 
+.open>.dropdown-toggle.btn-success:hover{
+   	color: #fff;
+    background-color: var(--success-color);
+    border-color:var(--success-color);
+    opacity: .8;
+    filter: alpha(opacity=80);
+}
+
+.btn-info:hover {
+    color: #fff;
+    background-color: var(--info-color);
+    border-color: var(--info-color);
+     opacity: .8;
+    filter: alpha(opacity=80);
+}
+.btn-info:focus,
+.btn-info.active.focus, 
+.btn-info.active:focus, 
+.btn-info.active:hover, 
+.btn-info:active.focus, 
+.btn-info:active:focus, 
+.btn-info:active:hover, 
+.open>.dropdown-toggle.btn-info.focus, 
+.open>.dropdown-toggle.btn-info:focus, 
+.open>.dropdown-toggle.btn-info:hover{
+   	color: #fff;
+    background-color:var(--info-color);
+    border-color: var(--info-color);
+     opacity: .8;
+    filter: alpha(opacity=80);
+}
+
+.btn-danger:hover {
+    color: #fff;
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
+     opacity: .8;
+    filter: alpha(opacity=80);
+}
+.btn-danger:focus,
+.btn-danger.active.focus, 
+.btn-danger.active:focus, 
+.btn-danger.active:hover, 
+.btn-danger:active.focus, 
+.btn-danger:active:focus, 
+.btn-danger:active:hover, 
+.open>.dropdown-toggle.btn-danger.focus, 
+.open>.dropdown-toggle.btn-danger:focus, 
+.open>.dropdown-toggle.btn-danger:hover{
+   	color: #fff;
+    background-color:var(--danger-color);
+    border-color: var(--danger-color);
+     opacity: .8;
+    filter: alpha(opacity=80);
+}
+
+
+.btn-warning:hover {
+    color: #fff;
+    background-color: var(--warning-color);
+    border-color: var(--warning-color);
+     opacity: .8;
+    filter: alpha(opacity=80);
+}
+.btn-warning:focus,
+.btn-warning.active.focus, 
+.btn-warning.active:focus, 
+.btn-warning.active:hover, 
+.btn-warning:active.focus, 
+.btn-warning:active:focus, 
+.btn-warning:active:hover, 
+.open>.dropdown-toggle.btn-warning.focus, 
+.open>.dropdown-toggle.btn-warning:focus, 
+.open>.dropdown-toggle.btn-warning:hover{
+   	color: #fff;
+    background-color: var(--warning-color);
+    border-color: var(--warning-color);
+     opacity: .8;
+    filter: alpha(opacity=80);
+}
+
+.btn-prue {
+	border: none;
+}
+.btn-prue.btn-primary {
+    color: var(--primary-color);
+    background-color: transparent;
+}
+.btn-prue.btn-info {
+    color: var(--info-color);
+    background-color: transparent;
+}
+.btn-prue.btn-success {
+    color: var(--success-color);
+    background-color: transparent;
+}
+.btn-prue.btn-warning {
+    color: var(--warning-color);
+    background-color: transparent;
+}
+.btn-prue.btn-danger {
+    color: var(--danger-color);
+    background-color: transparent;
+}
+
+.btn-circle{
+	width: 30px;
+	height: 30px;
+	padding: 6px 0;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 12px;
+	line-height: 16px;
+}
+.btn-circle.btn-lg{
+	width: 50px;
+	height: 50px;
+	padding: 6px 0;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 20px;
+	line-height: 25px;
+}
+.btn .icon{
+    width: 1em;
+    margin: 0 3px;
+    line-height: inherit;
+    text-align: center;
+}
+
+.btn-group.open .dropdown-toggle{
+	box-shadow: none;
+}
+/* --按钮处理区域 */
+
+.label{
+	padding:0.3em 0.6em 0.3em;
+}
+label {
+	font-weight: 400;
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.pagination>li>a, .pagination>li>span {
+    color: var(--primary-color);
+}
+
+
+.dropdown-menu {
+	border-radius: 0;
+}
+
+.dropdown-menu>li{
+	padding: 0px 3px;
+	margin: 2px 0;
+}
+.dropdown-menu>li>a {
+	font-size: 15px;
+	font-weight: 400;
+	padding: 5px 15px;
+	color:#676a6c;
+}
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+    color: #333;
+    text-decoration: none;
+    background-color: #f5f5f5;
+    outline: 0;
+}
+.dropdown-menu>.disabled>a, .dropdown-menu>.disabled>a:focus, .dropdown-menu>.disabled>a:hover{
+	color:#b9b9b9;
+}
+.dropdown-menu-primary>li>a:focus, .dropdown-menu-primary>li>a:hover{
+  	color: #fff;
+    text-decoration: none;
+    background-color: var(--primary-color);
+}
+.dropdown-menu-primary>.active>a, .dropdown-menu-primary>.active>a:focus, .dropdown-menu-primary>.active>a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    outline: 0;
+}
+
+.dropdown-menu-info>li>a:focus, .dropdown-menu-info>li>a:hover{
+  	color: #fff;
+    text-decoration: none;
+    background-color: var(--info-color);
+}
+.dropdown-menu-info>.active>a, .dropdown-menu-info>.active>a:focus, .dropdown-menu-info>.active>a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--info-color);
+    outline: 0;
+}
+
+.dropdown-menu-warning>li>a:focus, .dropdown-menu-warning>li>a:hover{
+  	color: #fff;
+    text-decoration: none;
+    background-color: var(--warning-color);
+}
+.dropdown-menu-warning>.active>a, .dropdown-menu-warning>.active>a:focus, .dropdown-menu-warning>.active>a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--warning-color);
+    outline: 0;
+}
+
+
+.dropdown-menu-success>li>a:focus, .dropdown-menu-success>li>a:hover{
+  	color: #fff;
+    text-decoration: none;
+    background-color: var(--success-color);
+}
+.dropdown-menu-success>.active>a, .dropdown-menu-success>.active>a:focus, .dropdown-menu-success>.active>a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--success-color);
+    outline: 0;
+}
+
+.dropdown-menu-dropdown-menu-danger>li>a:focus, .dropdown-menu-danger>li>a:hover{
+  	color: #fff;
+    text-decoration: none;
+    background-color: var(--danger-color);
+}
+.dropdown-menu-danger>.active>a, .dropdown-menu-danger>.active>a:focus, .dropdown-menu-danger>.active>a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--danger-color);
+    outline: 0;
+}
+.dropdown{
+	display: inline-block;
+}
+.dropdown-menu .divider{
+	margin: 0;
+}
+/* ul 平铺布局样式 --不确认，暂时弃用*/
+/* .blocks:after,[class*=blocks-]:after{
+	content:'';clear:both;display: block;
+}
+.blocks>li,[class*=blocks-]>li{
+	position: relative;
+	float: left;
+	min-height: 1px;
+	padding-right: 12px;
+	padding-left:12px;
+	margin-bottom: 10px;	
+}
+@media(max-width:768px){
+	.blocks-line-6 >li,	.blocks-line-5 >li,	.blocks-line-4 >li,	.blocks-line-3 >li,	.blocks-line-2 >li,	.blocks-line-1 >li{
+		width:100%;
+	}
+}
+@media(min-width:768px){
+	.blocks-line-6 >li,	.blocks-line-5 >li,	.blocks-line-4 >li,	.blocks-line-3 >li,	.blocks-line-2 >li,	.blocks-line-1 >li{
+		width:100%;
+	}
+}
+@media(min-width:991px){
+	.blocks-line-6 >li,	.blocks-line-5 >li,	.blocks-line-4 >li,	.blocks-line-3 >li,	.blocks-line-2 >li,	.blocks-line-1 >li{
+		width: 50%;
+	}
+}
+@media(min-width:1200px){
+	.blocks-line-6 >li{
+		width: 16.66666%;
+	}
+	.blocks-line-5 >li{
+		width: 20%;
+	}
+	.blocks-line-4 >li{
+		width: 25%;
+	}
+	.blocks-line-3>li{
+		width: 33.33333%;
+	}
+	.blocks-line-2>li{
+		width: 50%;
+	}
+	.blocks-line-1>li{
+		width: 100%;
+	}
+}
+@media(min-width:1600px){
+	
+} */
+/* --ul 平铺布局样式 */
+
+/* 文本强调样式 */
+.text-primary{
+	color:var(--primary-color);
+}
+.text-info{
+	color:var(--info-color);
+}
+.text-success{
+	color:var(--success-color);
+}
+.text-warning{
+	color:var(--warning-color);
+}
+.text-danger{
+	color:var(--danger-color);
+}
+/* --文本强调样式 */
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{
+	background-color: var(--primary-color);
+	border-color:  var(--primary-color);
+}
+.list-group-item-text{
+	font-size: 12px;
+	margin: 0 0 10px;
+	color: inherit;
+	line-height: inherit;
+}
+.well-primary {
+	color:#fff;
+	background-color: var(--primary-color);
+	border-color:  var(--primary-color);
+}
+.well-success {
+	color:#fff;
+	background-color: var(--success-color);
+	border-color:  var(--success-color);
+}
+.well-info {
+	color:#fff;
+	background-color: var(--info-color);
+	border-color:  var(--info-color);
+}
+.well-warning {
+	color:#fff;
+	background-color: var(--warning-color);
+	border-color:  var(--warning-color);
+}
+.well-danger {
+	color:#fff;
+	background-color: var(--danger-color);
+	border-color:  var(--danger-color);
+}
+/* 表单样式区域 */
+.form-control, .form-control:focus, .has-error .form-control:focus, .has-success .form-control:focus, .has-warning .form-control:focus, .navbar-collapse, .navbar-form, .navbar-form-custom .form-control:focus, .navbar-form-custom .form-control:hover, .open .btn.dropdown-toggle, .panel, .popover, .progress, .progress-bar{
+	box-shadow: none;
+}
+.form-control {
+	border-radius: 0px;
+	border: 1px solid #e5e6e7;
+	font-size: 12px;
+	line-height: 14px;
+}
+.list-search .form-control {
+	height: 30px;
+}
+.form-control:focus {
+	border-color: var(--primary-color);
+}
+.control-label {
+	font-weight: 400;
+}
+.has-success .checkbox, .has-success .checkbox-inline, .has-success .control-label, .has-success .help-block, .has-success .radio, .has-success .radio-inline, .has-success.checkbox label, .has-success.checkbox-inline label, .has-success.radio label, .has-success.radio-inline label{
+	color: var(--success-color);	
+}	
+.has-success .form-control,.has-success .form-control:focus {
+	border-color: var(--success-color);	
+}
+.has-warning .checkbox, .has-warning .checkbox-inline, .has-warning .control-label, .has-warning .help-block, .has-warning .radio, .has-warning .radio-inline, .has-warning.checkbox label, .has-warning.checkbox-inline label, .has-warning.radio label, .has-warning.radio-inline label{
+	color: var(--warning-color);	
+}	
+.has-warning .form-control,.has-warning .form-control:focus {
+	border-color: var(--warning-color);	
+}
+.has-error .checkbox, .has-error .checkbox-inline, .has-error .control-label, .has-error .help-block, .has-error .radio, .has-error .radio-inline, .has-error.checkbox label, .has-error.checkbox-inline label, .has-error.radio label, .has-error.radio-inline label{
+	color: var(--danger-color);	
+}	
+.has-error .form-control,.has-error .form-control:focus {
+	border-color: var(--danger-color);	
+}
+.form-control.round {
+	border-radius: 1000px;
+}
+/* --表单样式区域 */
+/* 警告框组件 */
+.alert-info{
+    color: var(--info-color);
+    background-color: rgba(236,249,250,.8);
+    border-color: rgba(236,249,250,.8);
+}
+.alert-info .alert-link {
+	 color: var(--info-color);
+}
+.alert-primary{
+    color: var(--primary-color);
+    background-color: rgba(232,241,248,.8);
+    border-color: rgba(232,241,248,.8);
+}
+.alert-primary .alert-link {
+	  color: var(--primary-color);
+}
+.alert-success{
+    color: var(--success-color);
+    background-color: rgba(231,250,242,.8);
+    border-color: rgba(231,250,242,.8);
+}
+.alert-success .alert-link {
+	 color: var(--success-color);
+}
+.alert-warning{
+      color: var(--warning-color);
+    background-color: rgba(255,243,230,.8);
+    border-color: rgba(255,243,230,.8);
+}
+.alert-warning .alert-link {
+	  color: var(--warning-color);
+}
+.alert-danger{
+  	  color: var(--danger-color);
+    background-color: rgba(255,234,234,.8);
+    border-color: rgba(255,234,234,.8);
+}
+.alert-danger .alert-link {
+	  color: var(--danger-color);
+}
+
+.alert.dark.alert-info{
+    color: #fff;
+    background-color: var(--info-color);
+    border-color: var(--info-color);
+}
+.alert.dark.alert-info .alert-link {
+	 color: #fff;
+}
+.alert.dark.alert-primary{
+    color: #fff;
+    background-color: var(--primary-color);
+    border-color:var(--primary-color);
+}
+.alert.dark.alert-primary .alert-link {
+	 color: #fff;
+}
+.alert.dark.alert-success{
+   color: #fff;
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+}
+.alert.dark.alert-success .alert-link {
+	color: #fff;
+}
+.alert.dark.alert-warning{
+     color: #fff;
+    background-color:  var(--warning-color);
+    border-color:  var(--warning-color);
+}
+.alert.dark.alert-warning .alert-link {
+	 color: #fff;
+}
+.alert.dark.alert-danger{
+  	 color: #fff;
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
+}
+.alert.dark.alert-danger .alert-link {
+  	color: #fff;
+}
+.close {
+	opacity: 0.5;
+	text-shadow: none;
+	font-weight: 400;
+}
+.alert.dark .close:HOVER {
+	color: #fff;
+	opacity: 1;
+}
+/* --警告框组件 */
+/* bootstrap-table样式覆盖 */
+.fixed-table-container {
+	border: none;
+	border-radius: 0px;
+}
+.bootstrap-table .table {
+	border-radius: 0;
+}
+
+.bootstrap-table .table thead{
+	background-color: #F3F3F3;
+}
+.bootstrap-table .table > thead > tr > th{
+	border-bottom:  none;
+	border-radius: 0px;
+}
+.fixed-table-container thead th .th-inner, .fixed-table-container tbody td .th-inner {
+	vertical-align: middle;
+	font-size: 14px;
+	font-weight: normal;
+}
+.fixed-table-container thead th:NOT(:LAST-CHILD) .th-inner {
+	border-right: 1px solid #fff;
+}
+.table-striped>tbody>tr:nth-of-type(odd) {
+	background-color: #fff;
+}
+.table-striped>tbody>tr:nth-of-type(even) {
+	background-color: #f9f9f9;
+}
+.table-hover>tbody>tr:hover {
+	background-color: #F5FBFF;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+	border-top: none;
+	vertical-align: middle;
+}
+.fixed-table-container tbody .selected td {
+		background-color: inherit;
+}
+.pagination>li:first-child>a, .pagination>li:first-child>span,.pagination>li:last-child>a, .pagination>li:last-child>span{
+	border-radius: 0 !important;
+}
+.fixed-table-pagination .pagination a {
+	padding: 5px 15px;
+}
+.page-list .btn {
+	padding: 5px 10px;
+	margin-left: 5px !important;
+	margin-right: 5px;
+}
+.bootstrap-dialog .bootstrap-dialog-title {
+	font-size: 14px;
+}

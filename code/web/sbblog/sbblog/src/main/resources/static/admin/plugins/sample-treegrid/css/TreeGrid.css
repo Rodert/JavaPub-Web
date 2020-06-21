@@ -1,0 +1,54 @@
+.switch:BEFORE {
+	font: normal normal normal 14px/1 FontAwesome;
+    font-size: 16px;
+    display: inline-block;
+    width: 15px;
+}
+
+.closeNode>td>div>.switch:BEFORE {
+	 content:"\f0da";
+}
+.openNode>td>div>.switch:BEFORE {
+	 content: "\f0d7";
+}
+
+.tree {
+	width: 100%;
+	border: 1px solid #e6e6e6;
+}
+.tree-head {
+	cursor: default;
+}
+.head {
+	font-size: 14px;
+	font-weight: normal;
+	text-align: left;
+	background-color: #F3F3F3;
+}
+
+td {
+	border: 1px solid #e6e6e6;
+}
+
+.head span {
+	text-align: center;
+}
+
+table div {
+	white-space: nowrap;
+	/* overflow: hidden; */
+	text-overflow: ellipsis;
+	bor
+}
+
+.hideLeaf {
+	display: none;
+	background-position: -110px 0;
+}
+/* .head span{
+		width:100%;
+	} */
+* {
+	margin: 0;
+	padding: 0;
+}
