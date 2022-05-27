@@ -1,9 +1,27 @@
-# JavaPub-Web
-JavaPub-Web is Code warehouse。一些开源web项目
+## 文件目录说明
 
-# 
+---
 
-`为了方便你更快上手，请耐心阅读下面全部内容，大约1分钟`
+**spring**
+
+
+包含SSM整合教程保姆级教程
+
+**web**
+
+
+包含完整项目源码
+
+
+
+
+
+---
+
+---
+
+---
+
 
 ## 下载地址
 
@@ -68,3 +86,6 @@ JavaPub-Web is Code warehouse。一些开源web项目
 ![公众号JavaPub](https://tva1.sinaimg.cn/large/007F3CC8ly1h1fh7jgw85j3076076glw.jpg)
 
 公众号：JavaPub
+
+
+
